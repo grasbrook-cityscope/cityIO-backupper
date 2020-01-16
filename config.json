@@ -1,0 +1,22 @@
+{
+    "table_urls" : [
+        "https://cityio.media.mit.edu/api/table/grasbrook_test/",
+        "https://cityio.media.mit.edu/api/table/grasbrook_silber/",
+        "https://cityio.media.mit.edu/api/table/grasbrook_lach/",
+        "https://cityio.media.mit.edu/api/table/grasbrook_sturm/",
+        "https://cityio.media.mit.edu/api/table/grasbrook_dreizehen/",
+        "https://cityio.media.mit.edu/api/table/grasbrook_herings/",
+        "https://cityio.media.mit.edu/api/table/grasbrook_eis/",
+        "https://cityio.media.mit.edu/api/table/grasbrook_mantel/"
+        ],
+    "table_names": [
+        "grasbrook_test",
+        "grasbrook_silber",
+        "grasbrook_lach",
+        "grasbrook_sturm",
+        "grasbrook_dreizehen",
+        "grasbrook_herings",
+        "grasbrook_eis",
+        "grasbrook_mantel"
+    ]
+}

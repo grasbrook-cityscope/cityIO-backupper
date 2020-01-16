@@ -9,6 +9,11 @@ __pycache__/
 # ignore token
 tokens.json
 
+# ignore idea folder
+/.idea
+/.backups
+/.city_io_backups
+
 # Distribution / packaging
 .Python
 build/
