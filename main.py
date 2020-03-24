@@ -5,15 +5,12 @@ import config_loader
 import os
 
 # returns the token for the endpoint
-# tokens.json is to be requested from admin
+# tokens.txt is to be requested from admin
 def getToken(endpoint=0):
     try:
-        with open("tokens.json") as file:
-            js = json.load(file)
-            token = js['tokens'][endpoint]
-            if token == "":
-                token = None  # happens with empty file
-
+        with open("token.txt") as f:
+            token = f.readline()
+        if token == "": token = None  # happens with empty file
     except IOError:
         token = None
 
