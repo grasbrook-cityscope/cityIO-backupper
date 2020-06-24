@@ -37,7 +37,7 @@ if __name__ == "__main__":
     if not os.path.exists(backups_dir):
         os.makedirs(backups_dir)
 
-    sleep_interval = 10
+    sleep_interval = 180
     city_io_down_interval = 1800
 
     while True:
@@ -66,7 +66,7 @@ if __name__ == "__main__":
                 write_file_to_disk(backups_dir, table_name, endpoint_json) # write lastest file to disk
 
                 old_grid_hashes[endpoint] = gridHash
-                sleep_interval = 10
+                sleep_interval = 180
             else: # table state has not changed
                 print(table_name, "did not change")
 
