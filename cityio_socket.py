@@ -19,7 +19,8 @@ def getCurrentState(endpoint, topic="", token=None):
             return {}
     # exit on request execption (cityIO down)
     except requests.exceptions.RequestException as e:
-        print("CityIO seems down. Exiting backupper to keep latest files. Needs to be manually restarted" + str(e))
-        exit()
+        print("CityIO seems down." + str(e))
+
+        return None
 
     return r.json()
