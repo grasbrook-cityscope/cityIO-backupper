@@ -64,11 +64,10 @@ if __name__ == "__main__":
             if gridHash != {} and gridHash != oldHash: # table state has changed
                 endpoint_json = cityio_socket.getCurrentState(int(endpoint), "", token)
                 write_file_to_disk(backups_dir, table_name, endpoint_json) # write lastest file to disk
+                print(table_name, "saved new backup")
 
                 old_grid_hashes[endpoint] = gridHash
                 sleep_interval = 180
-            else: # table state has not changed
-                print(table_name, "did not change")
 
         if sleep_interval == city_io_down_interval:
             print("wait for cityIO to come up again")
